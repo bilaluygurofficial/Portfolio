@@ -1,141 +1,43 @@
-# Portfolio Güncelleme Rehberi
+# 💼 Bilal Uygur - Portfolio
 
-## 📝 Portfolyonu Nasıl Güncellersin?
+Modern ve profesyonel kişisel portfolio websitem. AI-powered development yaklaşımıyla geliştirdiğim projelerimi ve yolculuğumu sergiliyor.
 
-### 1. Yeni Proje Eklemek
+## 🌐 Canlı Site
 
-**Dosya:** `index.html`
+**[bilaluyg.dev](https://esquetr.github.io/Portfolio/)** - Portfolio sitemin canlı versiyonu
 
-Projeler bölümünde (`<section id="projects">`) yeni bir proje kartı ekle:
+## ✨ Özellikler
 
-```html
-<div class="project-card featured">
-    <div class="project-banner">
-        <div class="project-icon-large">🎮</div> <!-- İkonunu değiştir -->
-        <div class="project-status-badge">
-            <span class="status-dot"></span>
-            Aktif
-        </div>
-    </div>
-    <div class="project-header">
-        <h3>Proje Adı</h3> <!-- Proje adını yaz -->
-        <span class="badge">✨ Canlı Proje</span>
-    </div>
-    <p class="project-description">
-        Proje açıklaması buraya gelecek... <!-- Açıklamayı yaz -->
-    </p>
-    
-    <div class="project-features">
-        <h4>Özellikler:</h4>
-        <ul>
-            <li>✓ Özellik 1</li>
-            <li>✓ Özellik 2</li>
-            <li>✓ Özellik 3</li>
-        </ul>
-    </div>
-    
-    <div class="project-tech">
-        <span class="tech-tag">🌐 Web App</span>
-        <span class="tech-tag">⚡ Full Stack</span>
-    </div>
-    
-    <div class="project-links">
-        <a href="https://proje-linkin.com" target="_blank" class="project-link primary-link">
-            <span>Siteyi Ziyaret Et</span>
-            <span class="arrow">→</span>
-        </a>
-    </div>
-</div>
-```
+- 🎨 Modern ve responsive tasarım
+- ⚡ Animasyonlu hero section
+- 📊 Detaylı proje showcase
+- 📅 Profesyonel timeline
+- 🎯 Uzmanlık alanları ve teknolojiler
+- 📱 Mobil uyumlu
 
-### 2. Profil Fotoğrafını Değiştirmek
+## 🛠️ Teknolojiler
 
-1. Yeni fotoğrafını `Portfolio` klasörüne koy
-2. Adını `profile.jpg` yap (veya `index.html`'de `<img src="profile.jpg">` kısmını değiştir)
+- HTML5
+- CSS3 (Animations, Gradients, Flexbox, Grid)
+- JavaScript (Vanilla)
+- GitHub Pages
 
-### 3. İletişim Bilgilerini Güncellemek
+## 🚀 Projelerim
 
-**Dosya:** `index.html`
+### Gorev Bank
+Ebeveynlerin çocuklarına harçlık verme şeklini dönüştüren bir platform. Çocuklar görevleri tamamlayarak harçlıklarını hak ederek kazanıyor.
 
-İletişim bölümünde (`<section id="contact">`) email ve GitHub linkini değiştir:
+**[gorevbank.click](https://www.gorevbank.click)** - Projeyi ziyaret et
 
-```html
-<a href="mailto:yeni-email@gmail.com" class="contact-link">
-    <span class="icon">✉</span>
-    yeni-email@gmail.com
-</a>
-```
+## 📫 İletişim
 
-### 4. Hakkımda Bölümünü Güncellemek
+- **Email:** bilalug930@gmail.com
+- **GitHub:** [@EsqueTR](https://github.com/EsqueTR)
 
-**Dosya:** `index.html`
+## 📝 Lisans
 
-Hakkımda bölümünde (`<section id="about">`) metinleri değiştir:
+© 2026 Bilal Uygur. Tüm hakları saklıdır.
 
-```html
-<p class="intro">
-    Buraya yeni tanıtım yazısını yaz...
-</p>
-```
+---
 
-### 5. Teknolojileri Güncellemek
-
-**Dosya:** `index.html`
-
-Teknolojiler bölümünde yeni teknolojiler ekle:
-
-```html
-<div class="skill-tags">
-    <span class="tag">Python</span>
-    <span class="tag">Yeni Teknoloji</span> <!-- Yeni ekle -->
-</div>
-```
-
-### 6. Timeline'ı Güncellemek
-
-**Dosya:** `index.html`
-
-Timeline bölümünde yeni bir yıl ekle:
-
-```html
-<div class="timeline-item active">
-    <div class="timeline-year">2027</div>
-    <div class="timeline-content">
-        <h4>Başlık</h4>
-        <p>Açıklama</p>
-    </div>
-</div>
-```
-
-### 7. Renkleri Değiştirmek
-
-**Dosya:** `style.css`
-
-En üstteki `:root` bölümünde renkleri değiştir:
-
-```css
-:root {
-    --primary: #3b82f6;  /* Ana renk */
-    --primary-dark: #2563eb;  /* Koyu ton */
-    --secondary: #60a5fa;  /* İkincil renk */
-}
-```
-
-## 🚀 Siteyi Yayınlamak (GitHub Pages)
-
-1. GitHub'da yeni bir repo oluştur (örn: `portfolio`)
-2. Tüm dosyaları repo'ya yükle
-3. GitHub repo ayarlarından **Pages** bölümüne git
-4. **Source** olarak `main` branch'i seç
-5. Sitenin linki: `https://kullaniciadin.github.io/portfolio`
-
-## 💡 İpuçları
-
-- Her değişiklikten sonra tarayıcıda **F5** ile yenile
-- Değişiklikleri test et
-- Düzenli olarak GitHub'a yükle (backup için)
-- Mobil görünümü de kontrol et
-
-## 📞 Yardım
-
-Bir sorun olursa, Claude Code'a sor: "Portfolio'mda X'i nasıl değiştiririm?"
+⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
