@@ -42,15 +42,41 @@ body {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.logo {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--primary);
-    letter-spacing: -0.5px;
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--dark);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .nav-links {
@@ -1078,12 +1104,58 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem 0;
+        gap: 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--light);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
     }
 
     .about-content {
@@ -1098,11 +1170,36 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .nav-links {
-        gap: 1rem;
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-impact {
+        grid-template-columns: 1fr;
     }
 
     .cta-buttons {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .project-philosophy {
+        padding: 2rem 1rem;
+    }
+
+    .contact-links {
+        padding: 0 1rem;
     }
 }
