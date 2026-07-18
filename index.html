@@ -3,364 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilal Uygur - AI-Native Developer</title>
+    <meta name="description" content="Bilal Uygur - AI-native developer ve dijital ürün geliştirici portfolyosu.">
+    <meta name="theme-color" content="#0b0b0c">
+    <title>Bilal Uygur — AI-Native Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <button class="mobile-menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+    <div class="page-loader" aria-hidden="true">
+        <span class="loader-mark">BU</span>
+        <div class="loader-track"><i></i></div>
+        <span class="loader-count">00</span>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="shell nav-shell">
+            <a class="brand" href="#home" aria-label="Bilal Uygur ana sayfa">
+                <span class="brand-mark">BU</span>
+                <span class="brand-status"><i></i> Üretmeye devam ediyor</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span>
             </button>
-            <ul class="nav-links">
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#about">Hakkımda</a></li>
-                <li><a href="#projects">Projeler</a></li>
-                <li><a href="#contact">İletişim</a></li>
-            </ul>
+            <nav id="site-nav" class="site-nav" aria-label="Ana navigasyon">
+                <a href="#work">Proje</a>
+                <a href="#journey">Yolculuk</a>
+                <a href="#about">Hakkımda</a>
+                <a href="#contact">İletişim</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <div class="animated-bg">
-            <div class="circle circle-1"></div>
-            <div class="circle circle-2"></div>
-            <div class="circle circle-3"></div>
-            <div class="circle circle-4"></div>
-            <div class="circle circle-5"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="profile-image-container">
-                    <img src="profile.jpg" alt="Bilal Uygur" class="profile-image">
-                    <div class="profile-ring"></div>
+    <main id="main">
+        <section id="home" class="hero">
+            <canvas id="neural-canvas" aria-hidden="true"></canvas>
+            <div class="hero-grid-lines" aria-hidden="true"></div>
+            <div class="shell hero-grid">
+                <div class="hero-copy reveal">
+                    <div class="hero-meta">
+                        <p class="eyebrow">AI-NATIVE DEVELOPER · TÜRKİYE</p>
+                        <span class="experience-chip"><b>07</b> yaşından beri üretiyor</span>
+                    </div>
+                    <h1 aria-label="Fikirleri çalışan dijital ürünlere dönüştürüyorum.">
+                        <span class="title-line"><i>Fikirleri çalışan</i></span>
+                        <span class="title-line title-muted"><i>dijital ürünlere</i></span>
+                        <span class="title-line"><i>dönüştürüyorum.</i></span>
+                    </h1>
+                    <p class="hero-lede">7 yaşımdan beri yazılım ve yapay zekâyla uğraşıyorum. Bugün bu birikimi, gerçek problemlere odaklanan hızlı ve düşünülmüş dijital ürünlere dönüştürüyorum.</p>
+                    <div class="hero-actions">
+                        <a class="button button-light magnetic" href="#work">Seçili projeyi incele <span aria-hidden="true">↘</span></a>
+                        <a class="text-link magnetic" href="mailto:bilalug930@gmail.com">Birlikte çalışalım <span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
-                <h1>Bilal Uygur</h1>
-                <p class="subtitle">AI-Native Developer & Digital Product Builder</p>
-                <p class="description">Yapay zeka destekli geliştirme süreçleriyle dijital ürünler inşa ediyorum</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
-                    <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
-                </div>
+                <figure class="portrait-wrap reveal tilt-card" data-delay="1">
+                    <div class="portrait-frame">
+                        <span class="portrait-code">BU / 2019—2026</span>
+                        <img src="profile-ai.png" alt="Bilal Uygur, yapay zekâ temalı stüdyosunda" class="portrait">
+                        <div class="portrait-scan" aria-hidden="true"></div>
+                        <span class="portrait-corner corner-a"></span>
+                        <span class="portrait-corner corner-b"></span>
+                    </div>
+                    <figcaption>
+                        <span>Bilal Uygur</span>
+                        <span>Developer / Product Builder</span>
+                    </figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
+            <div class="shell hero-foot reveal" data-delay="2">
+                <span><i class="live-dot"></i> 7 yaşından beri yazılım + AI</span>
+                <span>Python · Java · C# · JavaScript</span>
+                <a href="#about">Aşağı kaydır <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Hakkımda</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="stat-cards">
-                        <div class="stat-card">
-                            <div class="stat-icon">🚀</div>
-                            <div class="stat-number">7</div>
-                            <div class="stat-label">Yıllık Deneyim</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">💡</div>
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Teknoloji</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">⚡</div>
-                            <div class="stat-number">∞</div>
-                            <div class="stat-label">Motivasyon</div>
-                        </div>
-                    </div>
-                    <p class="intro">
-                        14 yaşındayım ve yazılım dünyasıyla tanışalı 7 yıl oldu. Bu süreçte sadece kod yazmayı öğrenmekle kalmadım,
-                        teknolojinin insanların hayatını nasıl dönüştürebileceğini keşfettim.
-                    </p>
-                    <p>
-                        Geleneksel yazılım geliştirme yöntemlerinin ötesine geçerek, yapay zeka araçlarını profesyonel bir asistan
-                        gibi kullanmayı öğrendim. Bu yaklaşım sayesinde, fikirlerimi çok daha hızlı ve etkili bir şekilde hayata
-                        geçirebiliyorum. Python, Java ve C# ile temel attığım bu yolculukta, artık AI-powered development metodolojisiyle
-                        ürünler geliştiriyorum.
-                    </p>
-                    <p>
-                        Gorev Bank gibi projelerimde, sadece teknik becerilerimi değil, aynı zamanda gerçek dünya problemlerine
-                        çözüm üretme yeteneğimi de gösteriyorum. Amacım, teknolojinin gücünü kullanarak insanların günlük hayatlarını
-                        kolaylaştıran, değer katan dijital ürünler yaratmak.
-                    </p>
-                    <p>
-                        Klasik eğitim sisteminin dışında, kendi öğrenme yolculuğumu şekillendirerek, modern yazılım dünyasının
-                        gerektirdiği becerileri kazanıyorum. Her gün yeni bir şey öğreniyor, her proje ile kendimi geliştiriyor
-                        ve dijital dünyada iz bırakacak ürünler üretmeye odaklanıyorum.
-                    </p>
-
-                    <div class="expertise-section">
-                        <h3>Uzmanlık Alanlarım</h3>
-                        <div class="expertise-grid">
-                            <div class="expertise-item">
-                                <div class="expertise-icon">🤖</div>
-                                <h4>AI-Powered Development</h4>
-                                <p>Claude AI, ChatGPT ve diğer yapay zeka araçlarını kullanarak hızlı ve etkili geliştirme</p>
-                            </div>
-                            <div class="expertise-item">
-                                <div class="expertise-icon">🌐</div>
-                                <h4>Web Development</h4>
-                                <p>Modern web teknolojileri ile responsive ve kullanıcı dostu uygulamalar</p>
-                            </div>
-                            <div class="expertise-item">
-                                <div class="expertise-icon">💡</div>
-                                <h4>Problem Solving</h4>
-                                <p>Gerçek dünya problemlerine yenilikçi ve pratik çözümler üretme</p>
-                            </div>
-                            <div class="expertise-item">
-                                <div class="expertise-icon">🎨</div>
-                                <h4>Product Design</h4>
-                                <p>Kullanıcı deneyimi odaklı, estetik ve işlevsel tasarımlar</p>
-                            </div>
-                        </div>
-                    </div>
+        <section id="about" class="intro section-light">
+            <div class="shell intro-grid">
+                <div class="section-index reveal">
+                    <span>01</span>
+                    <p>Yaklaşım</p>
                 </div>
-                <div class="sidebar">
-                    <div class="skills">
-                        <h3>🛠️ Teknolojiler</h3>
-                        <div class="skill-category">
-                            <h4>Programlama Dilleri</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Java</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Web Teknolojileri</h4>
-                            <div class="skill-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">Responsive Design</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>AI & Araçlar</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Claude AI</span>
-                                <span class="tag">ChatGPT</span>
-                                <span class="tag">GitHub</span>
-                                <span class="tag">Git</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline">
-                        <h3>📅 Yolculuğum</h3>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2019</div>
-                            <div class="timeline-content">
-                                <h4>Başlangıç</h4>
-                                <p>7 yaşında yazılıma ilk adım</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2021-2023</div>
-                            <div class="timeline-content">
-                                <h4>Temel Eğitim</h4>
-                                <p>Python, Java ve C# öğrenimi</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2024</div>
-                            <div class="timeline-content">
-                                <h4>AI Dönemi</h4>
-                                <p>AI-powered development'a geçiş</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2025</div>
-                            <div class="timeline-content">
-                                <h4>Gorev Bank</h4>
-                                <p>İlk büyük projeyi hayata geçirme</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item active">
-                            <div class="timeline-year">2026</div>
-                            <div class="timeline-content">
-                                <h4>Şimdi</h4>
-                                <p>Yeni projeler ve büyüme</p>
-                            </div>
-                        </div>
+                <div class="intro-content reveal" data-delay="1">
+                    <p class="statement">Kod yazmanın ötesinde, doğru problemi bulup onu <em>sade ve kullanılabilir</em> bir ürüne dönüştürmekle ilgileniyorum.</p>
+                    <div class="intro-columns">
+                        <p>7 yaşında yazılım ve yapay zekâ dünyasına girdim. Python, Java ve C# ile kurduğum temel bugün AI-native ürün geliştirme pratiğine dönüştü.</p>
+                        <p>AI araçlarını yalnızca hız için değil; daha çok alternatif denemek, daha iyi kararlar vermek ve fikirleri çalışan sistemlerle doğrulamak için kullanıyorum.</p>
                     </div>
                 </div>
             </div>
+            <div class="shell capability-list reveal">
+                <div><span>01</span><strong>Ürün stratejisi</strong><p>Problemi tanımlama, kapsam ve yol haritası</p></div>
+                <div><span>02</span><strong>Web geliştirme</strong><p>Responsive, erişilebilir ve hızlı arayüzler</p></div>
+                <div><span>03</span><strong>AI iş akışları</strong><p>Fikirden çalışan ürüne hızlı iterasyon</p></div>
+                <div><span>04</span><strong>Ürün tasarımı</strong><p>Net hiyerarşi ve kullanıcı odaklı deneyim</p></div>
+            </div>
+        </section>
+
+        <div class="tech-marquee" aria-label="Kullandığım teknolojiler">
+            <div class="marquee-track">
+                <span>PYTHON</span><i></i><span>JAVASCRIPT</span><i></i><span>PRODUCT DESIGN</span><i></i><span>ARTIFICIAL INTELLIGENCE</span><i></i><span>JAVA</span><i></i><span>C#</span><i></i><span>RAPID PROTOTYPING</span><i></i>
+                <span>PYTHON</span><i></i><span>JAVASCRIPT</span><i></i><span>PRODUCT DESIGN</span><i></i><span>ARTIFICIAL INTELLIGENCE</span><i></i><span>JAVA</span><i></i><span>C#</span><i></i><span>RAPID PROTOTYPING</span><i></i>
+            </div>
         </div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">💼 Projeler</h2>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-banner">
-                        <div class="project-icon-large">🏦</div>
-                        <div class="project-status-badge">
-                            <span class="status-dot"></span>
-                            Aktif
-                        </div>
+        <section id="journey" class="journey section-dark">
+            <div class="shell journey-layout">
+                <div class="journey-sticky reveal">
+                    <div class="section-index section-index-dark"><span>02</span><p>Yolculuk</p></div>
+                    <div class="journey-age">
+                        <span>Başlangıç yaşı</span>
+                        <strong data-counter="7">0</strong>
+                        <p>Merakla başlayan yolculuk, bugün ürün geliştirme disiplinine dönüştü.</p>
                     </div>
-                    <div class="project-header">
-                        <h3>Gorev Bank</h3>
-                        <span class="badge">✨ Canlı Proje</span>
-                    </div>
-                    <p class="project-description">
-                        Ebeveynlerin çocuklarına harçlık verme şeklini dönüştüren bir platform. Çocuklar görevleri tamamlayarak
-                        harçlıklarını hak ederek kazanıyor, böylece hem disiplin hem de sorumluluk bilinci kazanıyorlar.
-                    </p>
+                </div>
+                <div class="timeline-stream">
+                    <article class="timeline-entry reveal">
+                        <span class="timeline-year">2019</span>
+                        <div><small>İLK TEMAS</small><h3>Bilgisayarı tüketmek yerine onunla üretmeye başladım.</h3><p>7 yaşında kod, algoritma ve yapay zekâ kavramlarıyla tanıştım. Merak, kısa sürede günlük bir öğrenme pratiğine dönüştü.</p></div>
+                    </article>
+                    <article class="timeline-entry reveal">
+                        <span class="timeline-year">2021—23</span>
+                        <div><small>TEMEL</small><h3>Farklı diller, aynı düşünme sistemi.</h3><p>Python, Java ve C# ile programlama temelleri; problem çözme, mantık ve sistem kurma becerileri.</p></div>
+                    </article>
+                    <article class="timeline-entry reveal">
+                        <span class="timeline-year">2024</span>
+                        <div><small>AI-NATIVE</small><h3>Yapay zekâyı bir araçtan geliştirme ortağına dönüştürdüm.</h3><p>Prompt tasarımı, hızlı prototipleme ve AI destekli geliştirme iş akışlarını gerçek projelerde birleştirdim.</p></div>
+                    </article>
+                    <article class="timeline-entry reveal">
+                        <span class="timeline-year">2025—26</span>
+                        <div><small>ÜRÜN</small><h3>Fikirleri yayınlanan, kullanılan ürünlere taşıyorum.</h3><p>UcuzToken ile AI erişimini, yönlendirmeyi ve geliştirici deneyimini tek bir üründe birleştirdim.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                    <div class="project-features">
-                        <h4>Özellikler:</h4>
-                        <ul>
-                            <li>✓ Görev yönetim sistemi</li>
-                            <li>✓ Harçlık takip paneli</li>
-                            <li>✓ Ebeveyn kontrol merkezi</li>
-                            <li>✓ İlerleme raporları</li>
-                        </ul>
-                    </div>
+        <section id="work" class="work section-dark">
+            <div class="shell section-head reveal">
+                <div class="section-index section-index-dark"><span>03</span><p>Seçili proje</p></div>
+                <p class="section-kicker">Fikirden yayına alınmış ürüne.</p>
+            </div>
 
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <div class="impact-number">100%</div>
-                            <div class="impact-label">Disiplin Artışı</div>
-                        </div>
-                        <div class="impact-item">
-                            <div class="impact-number">∞</div>
-                            <div class="impact-label">Potansiyel</div>
-                        </div>
+            <article class="shell project-showcase">
+                <div class="project-top reveal">
+                    <div>
+                        <p class="eyebrow muted">CANLI ÜRÜN · 2026</p>
+                        <h2>UcuzToken</h2>
                     </div>
+                    <a class="round-link" href="https://ucuztoken.com" target="_blank" rel="noreferrer" aria-label="UcuzToken sitesini yeni sekmede aç">↗</a>
+                </div>
 
-                    <div class="project-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">🎯</span>
-                            <span class="stat-text">Problem Çözümü</span>
+                <div class="product-stage reveal parallax-stage" data-delay="1">
+                    <div class="stage-orbit orbit-one" aria-hidden="true"></div>
+                    <div class="stage-orbit orbit-two" aria-hidden="true"></div>
+                    <span class="stage-label label-one">LIVE / API</span>
+                    <span class="stage-label label-two">AI / ROUTING</span>
+                    <div class="browser-frame tilt-card">
+                        <div class="browser-bar"><i></i><i></i><i></i><span>ucuztoken.com</span></div>
+                        <div class="product-ui">
+                            <aside class="product-sidebar">
+                                <b>UcuzToken</b>
+                                <span class="active-line">Genel Bakış</span>
+                                <span>Modeller</span><span>Kullanım</span><span>API Anahtarları</span>
+                            </aside>
+                            <div class="product-main">
+                                <div class="ui-greeting"><div><small>Hoş geldin</small><b>AI çalışma alanı</b></div><span>UT</span></div>
+                                <div class="ui-terminal"><small>terminal</small><code><span>$</span> curl -X POST <b>/v1/messages</b></code><code class="terminal-note"># Routing to upstream...</code><code><mark>200 OK</mark> { "content": "Hello!" }</code><i></i></div>
+                                <div class="ui-row"><div><small>Desteklenen modeller</small><b>Claude · GPT · Gemini</b></div><div><small>Oturum sürekliliği</small><b>Aktif</b></div></div>
+                                <div class="ui-tasks"><b>Son istekler</b><p><i></i> /v1/messages <span>Claude</span></p><p><i></i> /v1/chat/completions <span>GPT</span></p></div>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-value">👨‍👩‍👧‍👦</span>
-                            <span class="stat-text">Aile Odaklı</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">🌐 Web App</span>
-                        <span class="tech-tag">⚡ Full Stack</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.gorevbank.click" target="_blank" class="project-link primary-link">
-                            <span>Siteyi Ziyaret Et</span>
-                            <span class="arrow">→</span>
-                        </a>
                     </div>
                 </div>
 
-                <div class="project-card upcoming">
-                    <div class="project-banner upcoming-banner">
-                        <div class="project-icon-large">🚀</div>
-                        <div class="countdown">
-                            <span class="countdown-text">Yakında</span>
-                        </div>
-                    </div>
-                    <div class="project-header">
-                        <h3>Yeni Projeler</h3>
-                        <span class="badge">🔨 Geliştiriliyor</span>
-                    </div>
-                    <p class="project-description">
-                        Farklı alanlarda yenilikçi çözümler sunan projeler üzerinde çalışıyorum. Her biri, kullanıcı deneyimini
-                        ön planda tutan, modern teknolojilerle geliştirilecek.
-                    </p>
+                <div class="project-details reveal">
+                    <p class="project-summary">Farklı AI modellerine tek API üzerinden erişim sağlayan; geliştiriciler için daha az maliyet, daha az kurulum ve daha güvenilir bir üretim deneyimi sunan platform.</p>
+                    <dl class="project-meta">
+                        <div><dt>Rol</dt><dd>Ürün, tasarım, geliştirme</dd></div>
+                        <div><dt>Odak</dt><dd>AI API yönlendirme ve maliyet</dd></div>
+                        <div><dt>Platform</dt><dd>Web uygulaması + geliştirici API'si</dd></div>
+                    </dl>
+                </div>
+                <div class="project-principles reveal">
+                    <article><span>01</span><h3>Tek API</h3><p>Claude, GPT, Gemini ve diğer modelleri tek erişim noktası üzerinden çağırır.</p></article>
+                    <article><span>02</span><h3>Akıllı routing</h3><p>Birden fazla upstream hesap arasında güvenilir yönlendirme ve otomatik devralma sağlar.</p></article>
+                    <article><span>03</span><h3>Üretim için</h3><p>Daha az öde, daha çok üret: geliştirici deneyimini doğrudan ürün değerine bağlar.</p></article>
+                </div>
+            </article>
+        </section>
 
-                    <div class="project-roadmap">
-                        <h4>Yol Haritası:</h4>
-                        <div class="roadmap-item">
-                            <div class="roadmap-step completed">1</div>
-                            <div class="roadmap-content">
-                                <strong>Fikir & Araştırma</strong>
-                                <span>Tamamlandı</span>
-                            </div>
-                        </div>
-                        <div class="roadmap-item">
-                            <div class="roadmap-step active">2</div>
-                            <div class="roadmap-content">
-                                <strong>Tasarım & Planlama</strong>
-                                <span>Devam ediyor</span>
-                            </div>
-                        </div>
-                        <div class="roadmap-item">
-                            <div class="roadmap-step">3</div>
-                            <div class="roadmap-content">
-                                <strong>Geliştirme</strong>
-                                <span>Beklemede</span>
-                            </div>
-                        </div>
-                        <div class="roadmap-item">
-                            <div class="roadmap-step">4</div>
-                            <div class="roadmap-content">
-                                <strong>Yayınlama</strong>
-                                <span>Beklemede</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="coming-soon-features">
-                        <div class="feature-item">💡 Yenilikçi Fikirler</div>
-                        <div class="feature-item">🎨 Modern Tasarım</div>
-                        <div class="feature-item">⚡ Hızlı Geliştirme</div>
+        <section class="process section-light">
+            <div class="shell process-grid">
+                <div class="section-index reveal"><span>04</span><p>Çalışma şekli</p></div>
+                <div class="process-content">
+                    <h2 class="reveal">Daha az varsayım.<br>Daha çok çalışan ürün.</h2>
+                    <div class="process-steps reveal" data-delay="1">
+                        <div><span>01</span><h3>Anla</h3><p>Kullanıcıyı, problemi ve başarı ölçütünü netleştir.</p></div>
+                        <div><span>02</span><h3>İnşa et</h3><p>En kritik akışı çalışan bir ürüne dönüştür.</p></div>
+                        <div><span>03</span><h3>Öğren</h3><p>Gerçek kullanımdan gelen sinyallerle iyileştir.</p></div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="project-philosophy">
-                <h3>Proje Felsefem</h3>
-                <div class="philosophy-grid">
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">🎯</div>
-                        <h4>Kullanıcı Odaklı</h4>
-                        <p>Her proje, gerçek kullanıcı ihtiyaçlarından doğar ve kullanıcı deneyimini ön planda tutar.</p>
-                    </div>
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">⚡</div>
-                        <h4>Hızlı İterasyon</h4>
-                        <p>AI araçları sayesinde fikirleri hızla prototiplere dönüştürüp test edebiliyorum.</p>
-                    </div>
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">🌱</div>
-                        <h4>Sürekli Gelişim</h4>
-                        <p>Her proje bir öğrenme fırsatı. Sürekli kendimi ve ürünlerimi geliştiriyorum.</p>
-                    </div>
+        <section id="contact" class="contact section-accent">
+            <div class="shell contact-grid">
+                <div class="section-index reveal"><span>05</span><p>İletişim</p></div>
+                <div class="contact-copy reveal" data-delay="1">
+                    <p class="eyebrow">YENİ FİKİRLERE AÇIK</p>
+                    <h2>Bir sonraki iyi fikri<br>birlikte çalıştıralım.</h2>
+                    <a class="contact-email" href="mailto:bilalug930@gmail.com">bilalug930@gmail.com <span>↗</span></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">İletişim</h2>
-            <div class="contact-content">
-                <p class="contact-text">
-                    Projelerim hakkında konuşmak, işbirliği yapmak veya sadece merhaba demek isterseniz,
-                    benimle iletişime geçebilirsiniz.
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:bilalug930@gmail.com" class="contact-link">
-                        <span class="icon">✉</span>
-                        bilalug930@gmail.com
-                    </a>
-                    <a href="https://github.com/bilaluygurofficial" target="_blank" class="contact-link">
-                        <span class="icon">⚡</span>
-                        GitHub: @bilaluygurofficial
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Bilal Uygur. Tüm hakları saklıdır.</p>
-        </div>
-    </footer>
+            <footer class="shell footer">
+                <p>© 2026 Bilal Uygur</p>
+                <div><a href="https://github.com/bilaluygurofficial" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home">Yukarı ↑</a></div>
+            </footer>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
